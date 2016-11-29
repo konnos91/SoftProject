@@ -1,0 +1,53 @@
+<h1> The find Stdudent </h1>
+
+<div class='container'>
+	<table  class='table'>
+	<thead>
+		<tr>
+			<th>StudentId</th>
+		    <th>Name</th>
+		    <th>Birth</th>
+		    <th>Class</th>
+		    <th>Year</th>
+		    <th>Quarter</th>
+		    <th>Math</th>
+		    <th>Computer</th>
+		    <th>Literature</th>
+		</tr>
+	</thead>
+	<tbody> 
+		
+		<tr>
+		  <td>
+			{{model.studentid}}
+		  </td>
+		  <td>
+			{{itemon.name}}
+		  </td>
+		  <td>
+			{{itemon.birth}}
+		  </td>
+		  <td>
+			{{itemon.stclass}}
+		  </td>
+		  <td>
+			{{itemon.Year}} 
+		  </td>
+		  <td> 
+			{{itemon.Quarter}}
+		 </td>
+		 <td>
+			{{itemon.math}}
+		</td>
+		<td>
+			{{itemon.computer}}
+		</td>
+		<td>
+			{{itemon.literature}}  	
+		</td>
+		</tr>
+		{{/each}}
+	</tbody>
+	</table>
+	{{outlet}}
+</div>
